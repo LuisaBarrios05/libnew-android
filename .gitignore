@@ -1,5 +1,38 @@
+# ======================================
+# Android Studio / IntelliJ
+# ======================================
+.idea/               # Configuración local del IDE
+*.iml                # Archivos de módulo de IntelliJ/AS
 
-# Project exclude paths
+# ======================================
+# Gradle
+# ======================================
+.gradle/             # Archivos y caches de Gradle
+build/               # Carpeta de build en la raíz
+*/build/             # Carpeta de build de cualquier módulo
+.cxx/                # Build outputs de C++
+.externalNativeBuild/
+.navigation/         # Archivos generados de navegación
+captures/            # Screenshots y grabaciones de AS
+
+# ======================================
+# Archivos locales y temporales
+# ======================================
+local.properties     # Ruta del SDK, solo de tu máquina
+*.log                # Logs temporales
+*.hprof              # Memory dumps
+*.apk                # APKs generados
+*.aar                # AARs generados (el que sube JitPack se genera allá)
+*.tmp                # Temporales
+*.temp
+
+# ======================================
+# Sistema Operativo
+# ======================================
+.DS_Store            # macOS
+Thumbs.db            # Windows
 /.gradle/
+/.idea/
 /build/
+/local.properties
 /mylibrary/build/

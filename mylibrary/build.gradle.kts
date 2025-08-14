@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.plugin.compose)
     id("maven-publish")}
 
-
+group = "com.github.LuisaBarrios05"
 android {
     namespace = "com.example.mylibrary"
     compileSdk = 36
@@ -46,11 +46,8 @@ android {
 publishing {
     publications {
         create<MavenPublication>("release") {
-            // podés cambiarlo si querés que el artifact se llame distinto
-            artifactId = "mylibrary"
-
-            // importante: publicar el AAR del variant 'release'
-            // (el afterEvaluate evita timing issues con AGP)
+            artifactId = "libnew-android"
+            groupId = "com.github.LuisaBarrios05"
             afterEvaluate {
                 from(components["release"])
             }
